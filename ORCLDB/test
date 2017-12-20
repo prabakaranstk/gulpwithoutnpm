@@ -1,1 +1,24 @@
 
+C:\Users\raju\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\raju\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\raju\AppData\Roaming\npm\node_modules\.bin;C:\Program Files\Dell\DW WLAN Card;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\WIDCOMM\Bluetooth Software\;c:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Users\raju\AppData\Local\bin\NASM;D:\OS\dd-0.3;;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\nodejs\;C:\Users\raju\AppData\Roaming\npm
+
+
+C:\Users\raju\.windows-build-tools
+
+npm --add-python-to-path='true' --debug install --global windows-build-tools
+
+
+ if installation process is taking longer than expected please verify the the installation log
+
+
+%USERPROFILE%\.windows-build-tools\
+if you have oracle client installed already, make sure the PATH variable has the location, if not you can install the instant client using npm. 
+
+npm install instantclient
+
+set PATH=%cd%\instantclient;%PATH%
+
+set OCI_LIB_DIR=%cd%\instantclient\sdk\lib\msvc
+
+set OCI_INC_DIR=%cd%\instantclient\sdk\include
+
+npm install oracledb
