@@ -1,0 +1,6 @@
+UPDATE public.emp
+	SET  config='{
+    "itAdmin": true,
+    "itCompany": true
+}'
+	WHERE id=4
